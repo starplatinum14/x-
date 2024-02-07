@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+   <p> {{title}} </p>
+   <p> Або вечір </p>
+   <img src="" alt
+   <div>
+   <a href="/logika">page2</a>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+   <div class = "container my-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+         {% for post in posts %}
+            <div class="col">
+               {% include 'post_card.html' %}
+            </div>
+         {% endfor %}
+      </div>
+   </div>
+
+
+
+{% endblock content %}
+

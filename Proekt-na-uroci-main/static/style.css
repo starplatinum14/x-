@@ -1,0 +1,27 @@
+p{
+    color: red;
+    font-size: 20px;
+}
+
+.red{
+    color: rgb(19, 0, 224)
+}
+
+h1{
+    color: blue;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.my-btn{
+    display: block;
+    background: blue;
+    color: #fb5417;
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 30;
+    border: 1px solid #fb5417;
+    border-radius: 7px;
+    text-decoration: none;
+}

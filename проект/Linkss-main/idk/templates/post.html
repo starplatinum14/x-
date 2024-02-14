@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<title> post </title>
+{% endblock title %}
+
+{% block content %}
+    <h2>{{post}}</h2>
+    <div class="container">
+        <h2 class="my4 text-center">{{post}}</h2>
+        <img scr="{{ url_for('static', filename='img/"+post[3]) }}" class=img-fluid alt="...">
+        <p> class="my-3"{{post[2]}}</p>
+        <p><i>{{post[4]}}</i></p>
+    {% include 'post_card.html' %}
+{% endblock content %}

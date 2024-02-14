@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+ 
+
+
+{% block content %}
+<div class="block-bg">
+   <html lang="uk">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat&display=swap">
+       <style>
+           .large-text {
+               font-size: 50px;
+               font-family: 'Caveat';
+               color: white;
+           }
+       </style>
+   </head>
+   <body>
+       <div class="large-text">
+           Links & chats
+       </div>
+   </body>
+   </html>
+
+   <html lang="uk">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <style>
+           body {
+               font-family: 'Signika', sans-serif;
+               font-size: 16px;
+           }
+       </style>
+   </head>
+   <body>
+       <p>
+           Дуже довгий текст, який ми розташували тут. Дуже довгий текст, який ми розташували тут.
+           Дуже довгий текст, який ми розташували тут. Дуже довгий текст, який ми розташували тут.
+           Дуже довгий текст, який ми розташували тут. Дуже довгий текст, який ми розташували тут.
+           Дуже довгий текст, який ми розташували тут. Дуже довгий текст, який ми розташували тут.
+           Дуже довгий текст, який ми розташували тут. Дуже довгий текст, який ми розташували тут.
+           Дуже довгий текст, який ми розташували тут. Дуже довгий текст, який ми розташували тут.
+       </p>
+   </body>
+   </html>
+   
+   <div class = "container my-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+         {% for post in posts %}
+         <div class="col">
+            {% include 'post_card.html' %}
+         </div>
+         {% endfor %}
+      </div>
+   </div>
+ </div>
+
+
+
+
+
+
+
+
+
+{% endblock content %}
+

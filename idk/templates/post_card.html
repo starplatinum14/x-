@@ -1,0 +1,8 @@
+<div class="card" style="max-width: 25rem;">
+    <img src="{{url_for('static', filename='img/'+post[3]) }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{post[1]}}</h5>
+      <p class="card-text" style="height: 10rem">{{posts[3]}}</p>
+      <a href="{{ url_for('post', post_id=post[0]) }}" class="btn btn-dark" >Watch</a>
+    </div>
+</div>

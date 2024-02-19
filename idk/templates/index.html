@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<div class="block-bg">
+    <div class="alert alert-danger" role="alert">
+        Сайт у закритому альфа тесті!
+    </div>
+    <html lang="uk">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat&display=swap">
+            <style>
+                .large-text {
+                    font-size: 50px;
+                    font-family: 'Caveat';
+                    color: white;
+                }
+                </style>
+   </head>
+   <body>
+       <div class="large-text">
+           Links & chats
+        </div>
+        
+
+        <!DOCTYPE html>
+        <html lang="uk">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Моя карточка</title>
+          <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet"> <!-- Підключаємо шрифт з Google Fonts -->
+          <style>
+            body {
+              font-family: 'Walter Turncoat', cursive; /* Застосовуємо шрифт Walter Turncoat для всього документу */
+            }
+            .card-title, .card-text {
+              font-family: 'Walter Turncoat', cursive; /* Застосовуємо шрифт Walter Turncoat для заголовку та тексту в картці */
+            }
+          </style>
+        </head>
+     </html>
+
+        
+        
+        
+        
+        
+
+        
+
+        
+
+
+
+
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+             <div class="card-group">
+                 <div class="card">
+                 <img src="..." class="card-img-top" alt="...">
+                 <div class="card-body">
+                     <h5 class="card-title">Card title</h5>
+                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                     <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                 </div>
+                 </div>
+                 <div class="card">
+                 <img src="..." class="card-img-top" alt="...">
+                 <div class="card-body">
+                     <h5 class="card-title">Card title</h5>
+                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                     <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                 </div>
+                 </div>
+                 <div class="card">
+                 <img src="..." class="card-img-top" alt="...">
+                 <div class="card-body">
+                     <h5 class="card-title">Card title</h5>
+                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                     <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                 </div>
+                 </div>
+             </div>
+
+     <div class = "container my-5">
+         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+             {% for post in posts %}
+             <div class="col">
+                 {% include 'post_card.html' %}
+                </div> 
+                {% endfor %}
+            </div>    
+            <html lang="uk">
+                <head>
+                <meta charset="UTF-8">    
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <style>
+                    body {
+                        font-family: 'Signika', sans-serif;
+                        font-size: 16px;
+                    }    
+                    </style>            
+        </head>
+        </html>
+    </div>    
+</div>        
+
+
+
+
+
+{% endblock content %}
+
